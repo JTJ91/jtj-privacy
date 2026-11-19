@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JTJ의 약먹자(Yakmukja) 개인정보처리방침. 복약 정보의 기기 내 저장, 알림, 광고, 인앱결제와 데이터 삭제 방법을 안내합니다.">
+  <meta name="referrer" content="no-referrer">
+  <title>약먹자 개인정보처리방침 | JTJ</title>
+  <link rel="canonical" href="https://jtj91.github.io/jtj-privacy/">
+  <link rel="alternate" hreflang="ko" href="https://jtj91.github.io/jtj-privacy/">
+  <link rel="alternate" hreflang="en" href="https://jtj91.github.io/jtj-privacy/en.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="index.html">약먹자</a>
+    <nav class="languages" aria-label="언어 선택"><a href="index.html" lang="ko" aria-current="page">한국어</a><a href="en.html" lang="en" hreflang="en">English</a></nav>
+  </header>
+  <div class="layout">
+    <aside class="toc"><h2>목차</h2><nav aria-label="목차">
+      <a href="#local-data">기기에 저장하는 정보</a><a href="#notifications">알림과 기기 기능</a><a href="#ads">광고와 개인정보 선택</a><a href="#purchases">광고 제거 구매</a><a href="#deletion">보관과 삭제</a><a href="#protection">보호와 외부 서비스</a><a href="#contact">문의와 변경 안내</a>
+    </nav></aside>
+    <main id="content">
+      <h1>개인정보처리방침</h1>
+      <p class="intro">이 개인정보처리방침은 JTJ가 제공하는 약먹자(Yakmukja)의 개인정보 처리에 적용됩니다. 앱의 패키지명은 <span lang="en">com.jtj.yakmeokja</span>입니다.</p>
+      <div class="meta"><span>개발자: JTJ</span><span>최종 업데이트: <time datetime="2026-11-19">2026년 11월 19일</time></span><a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a></div>
+      <p class="overview">복약 정보는 사용자의 기기에 저장됩니다. 별도의 회원가입이나 로그인은 필요하지 않으며, JTJ는 복약 정보를 보관하는 서버를 운영하지 않습니다. 광고와 결제 과정에서는 Google 서비스가 관련 정보를 처리합니다. Android 백업과 기기 이전에 관한 내용은 아래 ‘보관 기간, 백업과 삭제 방법’에서 확인할 수 있습니다.</p>
+
+      <section id="local-data">
+        <h2>기기에 저장하는 정보와 이용 목적</h2>
+        <div class="table-wrap"><table><thead><tr><th scope="col">정보</th><th scope="col">내용과 목적</th></tr></thead><tbody>
+          <tr><th scope="row">약과 알림 설정</th><td>입력한 약 이름, 복용 시각과 선택한 시간대, 알약 모양·색, 알림 사용 여부, 알람음 참조 정보와 소리·진동 설정을 저장합니다. 약을 표시하고 설정한 시각에 알림을 제공하기 위해 사용합니다.</td></tr>
+          <tr><th scope="row">복용 확인 상태</th><td>‘먹었어요’와 되돌리기 기능에 필요한 복용 상태를 저장합니다. 다음 복용 시각까지의 상태를 확인하는 용도이며, 날짜별 복용 이력을 별도로 쌓아 두지 않습니다.</td></tr>
+          <tr><th scope="row">앱 사용 설정</th><td>첫 실행 사용법을 완료했는지 저장합니다. 화면 언어와 기본 시간대는 기기 설정을 참고하며, 사용자가 복용 시간대를 직접 바꿀 수 있습니다.</td></tr>
+          <tr><th scope="row">구매 확인 정보</th><td>광고 제거 권한 확인과 복원을 위해 Google Play의 구매 정보 및 서명된 영수증을 처리하고, 검증된 영수증의 사본을 기기에 저장합니다. 자세한 내용은 ‘광고 제거 구매’에서 안내합니다.</td></tr>
+        </tbody></table></div>
+        <p>앱은 약 이름·복용 시각·복용 확인 상태를 JTJ의 서버로 전송하거나 광고 요청에 포함하지 않습니다. 입력한 내용으로 건강 상태가 드러날 수 있으므로, 기기를 다른 사람과 공유할 때는 정보가 노출되지 않도록 주의하시기 바랍니다.</p>
+        <p>앱은 결제 연결·상품 조회 상태, 상품 식별자와 반환 가격 등 진단 정보를 기기 로그에 기록합니다. 이 로그를 개발자 서버로 자동 업로드하는 기능은 없습니다.</p>
+      </section>
+
+      <section id="notifications">
+        <h2>알림과 기기 기능</h2>
+        <p>복약 알림은 Android 알람·알림 기능으로 기기에서 예약합니다. 앱 업데이트·재부팅·시각 또는 시간대 변경 후 다시 예약할 수 있으며, 재부팅 후 잠금 해제 전에도 알림을 준비할 수 있도록 관련 설정을 기기 보호 저장소에 보관합니다. 개발자 서버에서 푸시 알림을 보내는 방식은 사용하지 않습니다.</p>
+        <ul>
+          <li>알림 표시, 정확한 알람, 전체 화면 알람, 백그라운드 알람 재생, 진동과 화면 깨우기 기능은 복약 알림을 위해 사용합니다. 허용 여부는 Android 설정에서 변경할 수 있습니다.</li>
+          <li><strong>약 이름·복용 시각·시간대가 알림 및 잠금 화면에 표시될 수 있습니다.</strong> 노출을 줄이려면 Android의 잠금 화면 알림 설정을 조정해 주세요.</li>
+          <li>가속도 센서 값은 약통 속 알약의 움직임을 표현하는 동안에만 사용합니다. 센서 값은 파일로 저장하거나 외부로 전송하지 않습니다.</li>
+          <li>알람음은 시스템 선택기에서 선택한 소리를 재생합니다. 카메라·마이크·연락처·GPS 위치를 읽는 권한은 요청하지 않으며, 시간대 설정은 GPS 위치 수집 기능이 아닙니다.</li>
+        </ul>
+      </section>
+
+      <section id="ads">
+        <h2>AdMob 광고와 개인정보 선택</h2>
+        <p>무료 이용 시 Google AdMob 배너 광고가 표시될 수 있습니다. Google Mobile Ads SDK는 광고 제공·측정과 부정행위 방지를 위해 IP 주소, 앱·광고 이용 정보, 성능·진단 정보, 광고 ID·앱 세트 ID를 수집·공유할 수 있습니다. 해당되는 경우 기기에 로그인한 계정 관련 식별자도 처리합니다. IP 주소는 대략적인 위치를 추정하는 데 사용될 수 있습니다. 자세한 항목은 <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ko">Google의 SDK 데이터 안내</a>를 참고하시기 바랍니다.</p>
+        <p>Google User Messaging Platform(UMP)을 사용해 동의 상태를 확인하고 필요한 경우 개인정보 선택 양식을 표시합니다. SDK가 개인정보 선택 항목을 요구하는 경우 우측 메뉴에 <strong>‘광고 개인정보 설정’</strong>이 나타납니다. 제공되는 선택은 해당 양식에서 변경할 수 있으며, 광고 ID 관련 설정은 Android의 광고 설정에서도 관리할 수 있습니다.</p>
+        <p>광고 제거 구매 권한이 확인된 경우 새로운 배너 광고 요청을 하지 않고 광고 영역을 제거합니다. 알람·약 복용 확인 화면에도 배너를 표시하지 않습니다. 광고 제거 구매가 Google에 이미 보관된 데이터를 삭제하는 것은 아닙니다.</p>
+      </section>
+
+      <section id="purchases">
+        <h2>Google Play 광고 제거 구매</h2>
+        <p>광고 제거는 Google Play를 통한 일회성 비소모성 구매입니다. 결제 및 결제 수단은 Google Play가 처리하며, JTJ의 앱은 카드 번호나 결제 수단 비밀번호를 입력받거나 저장하지 않습니다.</p>
+        <p>앱은 구매 상품·상태, 구매 토큰과 서명 등 Google Play가 반환하는 구매 정보를 조회하고, 영수증 서명과 구매 승인을 확인해 광고 제거 권한을 적용합니다. 확인된 영수증과 서명은 Android 백업 제외 경로에 저장하여 오프라인 권한 확인에 사용합니다. 개발자 결제 검증 서버로 전송하는 기능은 없습니다.</p>
+        <p>‘구매 복원’과 앱 실행·복귀 시 Google Play의 현재 구매 내역을 다시 확인합니다. 앱 데이터를 삭제해도 Google Play 구매 자체는 취소되지 않으며, 같은 구매 계정으로 복원할 수 있습니다. 환불·구매 내역 관리에는 Google Play의 절차가 적용됩니다.</p>
+      </section>
+
+      <section id="deletion">
+        <h2>보관 기간, 백업과 삭제 방법</h2>
+        <p>복약 설정은 사용자가 수정하거나 삭제할 때까지 기기에 보관합니다. 복용 상태 값은 다음 복용 구간의 표시 판단에 사용되며, 저장된 값 자체가 그 시각에 자동 삭제되는 것은 아닙니다. 구매 영수증 사본은 광고 제거 권한 확인에 사용되며, 앱 데이터 삭제 또는 이후 정상 구매 조회에서 권한이 없는 것으로 확인되는 경우 제거됩니다.</p>
+        <ol>
+          <li><strong>약 하나 삭제:</strong> 해당 약의 확인창에서 ‘설정’을 열고 삭제를 선택해 확인합니다. 저장된 해당 약 정보와 복용 상태가 삭제되고 그 약의 예약 알림이 취소됩니다.</li>
+          <li><strong>기기 내 앱 데이터 전체 삭제:</strong> Android 설정에서 약먹자 → 저장공간 → 데이터 삭제를 사용하거나 앱을 삭제합니다. 기기에 저장된 복약 정보·설정·영수증 사본이 제거됩니다. 메뉴 이름은 기기에 따라 다를 수 있습니다.</li>
+          <li><strong>Google 보유 정보:</strong> 앱 삭제만으로 Google의 구매 내역·광고 관련 정보·시스템 백업까지 삭제되지는 않습니다. 해당 서비스와 기기의 계정·백업·개인정보 설정을 이용해 관리해야 합니다.</li>
+        </ol>
+        <p>앱은 Android 백업 및 기기 이전을 허용합니다. 따라서 기기·운영체제·사용자 설정에 따라 일부 앱 데이터가 시스템 백업이나 기기 이전에 포함될 수 있습니다. JTJ가 제공하는 별도의 클라우드 동기화는 없습니다. 구매 영수증 사본과 사용법 완료 표식은 백업 제외 저장소에 둡니다. 백업의 생성·복원·삭제 여부와 기간은 Android 및 백업 제공자의 설정에 따르며 JTJ가 원격으로 삭제하지 못합니다.</p>
+        <p>Google 서비스의 보유 기간과 삭제 방식은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>에 따릅니다. 앱에는 Google이 보유하는 모든 정보의 보관 기간을 정하거나 삭제하는 기능이 없습니다.</p>
+      </section>
+
+      <section id="protection">
+        <h2>정보 보호와 외부 서비스</h2>
+        <p>복약 정보는 Android의 앱 전용 저장소에 저장합니다. 현재 앱 자체에서 추가 파일 암호화나 별도 앱 잠금을 제공하지는 않습니다. Google은 Mobile Ads SDK의 수집 데이터가 TLS로 암호화되어 전송된다고 안내합니다. 기기 잠금과 알림 공개 범위도 함께 관리해 주세요.</p>
+        <p>앱은 Google Mobile Ads 25.5.0, Google UMP 4.0.0, Google Play Billing 9.1.0을 사용합니다. Google 서비스의 정보 처리·공유 및 국가 간 처리에는 Google의 방침과 설정이 적용됩니다.</p>
+        <p>이 페이지에는 자체 광고나 방문자 분석 도구, 입력 양식, 외부 웹폰트를 사용하지 않습니다. GitHub Pages에서 제공되는 페이지의 접속 요청은 GitHub가 처리합니다. 외부 링크를 이용하면 해당 서비스의 개인정보처리방침이 적용됩니다.</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></li>
+          <li><a href="https://policies.google.com/technologies/ads?hl=ko">Google 광고 관련 개인정보 안내</a></li>
+          <li><a href="https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a></li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>문의와 방침 변경</h2>
+        <p>개인정보 및 데이터 삭제 방법에 관한 문의는 <strong>JTJ</strong>의 <a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a>으로 보내 주세요. 앱의 ‘문의하기’는 수신 주소와 제목이 설정된 이메일 작성 화면을 열며, 복약 정보나 영수증을 자동 첨부하지 않습니다. 사용자가 직접 전송을 선택해야 이메일이 발송됩니다.</p>
+        <p>JTJ는 사용자의 기기에 저장된 복약 정보에 원격으로 접근하거나 이를 삭제할 수 없습니다. 문의할 때는 필요한 내용만 보내 주시고, 약 이름·건강 정보·구매 토큰은 가급적 포함하지 마시기 바랍니다.</p>
+        <p>개인정보 처리에 변경이 있으면 이 방침과 업데이트 날짜를 수정합니다. 별도의 안내나 동의가 필요한 경우에는 해당 절차를 진행합니다.</p>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">약먹자 · Yakmukja · JTJ <span aria-hidden="true">/</span> <a href="en.html" lang="en">English privacy policy</a></footer>
+</body>
+</html>
