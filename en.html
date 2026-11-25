@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JTJ’s privacy policy for Yakmukja: on-device medication data, reminders, ads, in-app purchases, retention and deletion.">
+  <meta name="description" content="JTJ’s privacy policy for Chaenggija: on-device reminder data, reminders, ads, in-app purchases, retention and deletion.">
   <meta name="referrer" content="no-referrer">
-  <title>Yakmukja Privacy Policy | JTJ</title>
-  <link rel="canonical" href="https://jtj91.github.io/jtj-privacy/en.html">
-  <link rel="alternate" hreflang="ko" href="https://jtj91.github.io/jtj-privacy/">
-  <link rel="alternate" hreflang="en" href="https://jtj91.github.io/jtj-privacy/en.html">
+  <title>Chaenggija Privacy Policy | JTJ</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="topbar">
-    <a class="brand" href="en.html">Yakmukja</a>
+    <a class="brand" href="en.html">Chaenggija</a>
     <nav class="languages" aria-label="Choose language"><a href="index.html" lang="ko" hreflang="ko">한국어</a><a href="en.html" lang="en" aria-current="page">English</a></nav>
   </header>
   <div class="layout">
@@ -22,39 +19,47 @@
       <a href="#local-data">Data on your device</a><a href="#notifications">Reminders &amp; device features</a><a href="#ads">Ads &amp; privacy choices</a><a href="#purchases">Ad removal purchases</a><a href="#deletion">Retention &amp; deletion</a><a href="#protection">Protection &amp; other services</a><a href="#contact">Contact &amp; updates</a>
     </nav></aside>
     <main id="content">
-      <h1>Privacy Policy</h1>
-      <p class="intro">This privacy policy applies to Yakmukja (약먹자), provided by JTJ. The Android package name is <span>com.jtj.yakmeokja</span>.</p>
-      <div class="meta"><span>Developer: JTJ</span><span>Last updated: <time datetime="2026-11-19">November 19, 2026</time></span><a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a></div>
-      <p class="overview">Medication information is stored on your device. No registration or sign-in is required, and JTJ does not operate a server that stores medication data. Google services process information for advertising and purchases. Android backup and device transfer are covered under “Retention, backup, and deletion.”</p>
+      <h1>Chaenggija Privacy Policy</h1>
+      <p class="intro">This privacy policy applies to Chaenggija (챙기자), provided by JTJ. The Android package name is <span>com.jtj.chaenggija</span>.</p>
+      <div class="meta"><span>Developer: JTJ</span><span>Last updated: <time datetime="2026-11-25">November 25, 2026</time></span><a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a></div>
+      <p class="overview">Chaenggija saves a selected reference time zone for each reminder and uses it to schedule one-time or repeating reminders, including when travel changes your device’s time zone. Reminder information is stored on your device. There is no app registration, sign-in, or developer-operated reminder synchronization server. Google services collect and process information for advertising and ad-removal purchases. Android backup and device transfer are covered under “Retention, backup, and deletion.”</p>
 
       <section id="local-data">
         <h2>Information stored on your device</h2>
         <div class="table-wrap"><table><thead><tr><th scope="col">Information</th><th scope="col">Details and purpose</th></tr></thead><tbody>
-          <tr><th scope="row">Medication and reminder settings</th><td>Medication names you enter, dose times and selected time zones, pill appearance, reminder enablement, alarm sound references, and sound and vibration settings. These are used to display your medicines and provide reminders.</td></tr>
-          <tr><th scope="row">Dose confirmation state</th><td>The current state needed for “Taken” and undo actions. The app determines the state through the next dosing interval; it does not create a separate, long-term, dated medication history.</td></tr>
-          <tr><th scope="row">App preferences</th><td>Whether you have finished the first-use guide. The app uses device language and the default time zone for display and initial settings. You can select a different time zone for each medicine.</td></tr>
+          <tr><th scope="row">Reminder settings</th><td>Reminder titles, times and reference time zones, one-time reminder dates and scheduled instants, repeat days/cycles, icon types and colors, reminder enablement, alarm sound references, and sound and vibration settings. These support scheduling and the display of reminder icons, details, and alarm screens.</td></tr>
+          <tr><th scope="row">Completion history</th><td>We store repeating-reminder completion/undo state and up to 200 recent actions (reminder ID/title, timestamp and saved time zone) on your device. Deleting a reminder also deletes its local history.</td></tr>
+          <tr><th scope="row">Reminder delivery state</th><td>Delivery and completion state for one-time reminders and state used to determine whether a reminder needs attention. These prevent duplicate alarms and restore state after a restart or reboot.</td></tr>
+          <tr><th scope="row">App preferences</th><td>First-use guide completion, icon collision-vibration preferences, the selected case shape, and colors saved for each case. Device settings supply the display language and initial reference time zone. You can select a reference time zone for each reminder.</td></tr>
           <tr><th scope="row">Purchase verification</th><td>Purchase information and signed receipts returned by Google Play are processed to verify and restore ad removal. A verified receipt copy is saved on the device, as explained below.</td></tr>
         </tbody></table></div>
-        <p>The app does not send medication names, dose schedules, or dose confirmation states to a JTJ server or include them in ad requests. These details may reveal health information. Take care when sharing your device with others.</p>
+        <p>The app does not send reminder titles, dates, times, reference time zones, completion states, or case preferences to a JTJ server or include them in ad requests. Free-text titles may contain personal information and may appear in notifications and on the lock screen.</p>
         <p>The app writes billing connection and product-query status, product identifiers, and returned prices to device diagnostic logs. It does not automatically upload these logs to a developer server.</p>
       </section>
 
       <section id="notifications">
         <h2>Reminders and device features</h2>
-        <p>Reminders are scheduled locally using Android alarms and notifications. They can be rescheduled after a reboot, app update, or clock or time-zone change. Reminder settings use device-protected storage so scheduling can resume before the first unlock after reboot. The app does not use a developer-operated push notification server.</p>
+        <p>Reminders are scheduled locally using Android alarms and notifications and the IANA time zone saved for each reminder. That reference time zone stays unchanged when the device’s time zone changes. Reminders can be rescheduled after a reboot, app update, or clock or time-zone change. Reminder settings use device-protected storage so scheduling can resume before the first unlock after reboot. The app does not use a developer-operated push notification server.</p>
         <ul>
-          <li>Notifications, exact alarms, full-screen alarms, background alarm playback, vibration, and wake functions support medication reminders. You can manage the relevant permissions in Android settings.</li>
-          <li><strong>Medication names, dose times, and time zones may appear in notifications and on the lock screen.</strong> Adjust Android’s lock-screen notification settings to limit this display.</li>
-          <li>Accelerometer readings are used only to animate pills in the bottle. The readings are not saved to files or transmitted.</li>
+          <li>Notifications, exact alarms, full-screen alarms, background alarm playback, vibration, and wake functions support daily reminders. You can manage the relevant permissions in Android settings.</li>
+          <li><strong>Reminder titles, reminder times, and time zones may appear in notifications and on the lock screen.</strong> Adjust Android’s lock-screen notification settings to limit this display.</li>
+          <li>Accelerometer readings are used only while the app animates the tilting, shaking, and collisions of icons inside the selected case. The readings are not saved to files or transmitted.</li>
           <li>The app plays a sound chosen through the system ringtone picker. It does not request camera, microphone, contacts, or GPS location permissions. Selecting a time zone is not GPS tracking.</li>
         </ul>
       </section>
 
       <section id="ads">
-        <h2>AdMob advertising and privacy choices</h2>
-        <p>The free version may show Google AdMob banner ads. Google Mobile Ads SDK may collect and share IP addresses, app and ad interactions, diagnostic information, advertising IDs, and app set IDs for advertising, measurement, and fraud prevention. Account-related identifiers may also be processed where applicable. IP addresses can be used to estimate approximate location. Details are available in <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google’s SDK disclosure</a>.</p>
-        <p>Google User Messaging Platform (UMP) checks consent status and presents privacy forms when required. When the SDK requires a privacy-options entry, <strong>“Ad privacy settings”</strong> appears in the side menu. Available choices are managed in that form; advertising ID controls are also available in Android settings.</p>
-        <p>Once ad-removal ownership is verified, the app stops new banner requests and removes the ad area. Banners are also hidden on alarm and dose-confirmation screens. Buying ad removal does not delete data Google already holds.</p>
+        <h2>Advertising and privacy choices</h2><p>The free version may show a Google AdMob banner in a dedicated area at the bottom of the home screen. A divider and spacing separate it from the add button. Banners are hidden on alarm screens and while editing or viewing reminder details. Development builds use Google demo ads.</p>
+        <p>Google Mobile Ads SDK collects and shares the following information for advertising, measurement, analytics, and fraud prevention. This external processing by the advertising SDK can occur even though the developer does not operate a reminder server.</p>
+        <div class="table-wrap"><table><thead><tr><th scope="col">Data type</th><th scope="col">Information processed by the advertising SDK</th></tr></thead><tbody>
+          <tr><th scope="row">Approximate location</th><td>The device’s IP address is collected and can be used to estimate its general location. This is separate from precise GPS location.</td></tr>
+          <tr><th scope="row">App interactions</th><td>Information about app and advertising interactions, such as app launches and ad taps.</td></tr>
+          <tr><th scope="row">Diagnostics</th><td>App and SDK performance information, such as launch time, hang rate, and energy usage.</td></tr>
+          <tr><th scope="row">Device or other IDs</th><td>Android advertising ID, app set ID, and, where applicable, other identifiers related to signed-in accounts on the device.</td></tr>
+        </tbody></table></div>
+        <p>See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google’s SDK disclosure</a> for details and controls. The purposes are advertising or marketing, analytics, and fraud prevention/security.</p>
+        <p>Google User Messaging Platform (UMP) checks consent status and presents privacy forms as required by the region and service configuration. When the SDK requires a privacy-options entry, <strong>“Ad privacy settings”</strong> appears in the side menu. Available choices are managed in that form; advertising ID controls are also available in Android settings. Some information may still be processed for advertising, measurement, and fraud prevention after advertising preferences change.</p>
+        <p>Once ad-removal ownership is verified, the app stops new banner requests and removes the ad area. Banners are also hidden on alarm and reminder-completion screens. Buying ad removal does not delete data Google already holds.</p>
       </section>
 
       <section id="purchases">
@@ -66,10 +71,10 @@
 
       <section id="deletion">
         <h2>Retention, backup, and deletion</h2>
-        <p>Medication settings stay on the device until you change or delete them. The saved dose state is used to determine the current dosing interval; the stored value is not automatically erased when that interval ends. The receipt copy supports ad-removal verification and is removed when app data is cleared or a later successful purchase query confirms there is no entitlement.</p>
+        <p>Reminder settings and delivery states stay on the device until you change or delete them. Marking a one-time reminder as complete deletes that reminder and its associated local history and cancels its scheduled alarm. Repeating-reminder completion state is used to determine the current reminder interval; the stored value is not automatically erased when that interval ends. The receipt copy supports ad-removal verification and is removed when app data is cleared or a later successful purchase query confirms there is no entitlement.</p>
         <ol>
-          <li><strong>Delete a medicine:</strong> Open its confirmation dialog, select “Settings,” then choose and confirm deletion. Its stored information and dose state are removed and its scheduled alarms are cancelled.</li>
-          <li><strong>Remove local app data:</strong> Use Android Settings → Apps → Yakmukja → Storage → Clear data, or uninstall the app. This removes locally stored medication data, preferences, and receipt copies. Setting names vary by device.</li>
+          <li><strong>Delete a reminder:</strong> Tap the reminder, select “Delete” in its details, and confirm. Its stored information, completion state, and associated history are removed, and its scheduled alarms are cancelled.</li>
+          <li><strong>Remove local app data:</strong> Use Android Settings → Apps → Chaenggija → Storage → Clear data, or uninstall the app. This removes locally stored reminder data, preferences, and receipt copies. Setting names vary by device.</li>
           <li><strong>Data held by Google:</strong> Uninstalling does not itself delete Google’s purchase history, advertising-related information, or system backups. Manage these through the relevant service, account, and backup controls.</li>
         </ol>
         <p>The app allows Android backup and device transfer. Depending on the device, operating system, and user settings, some app data may be included. JTJ does not provide separate cloud synchronization. Receipt copies and the guide-completion marker use no-backup storage. Backup creation, restoration, deletion, and retention depend on Android and the backup provider; JTJ cannot remotely delete those copies.</p>
@@ -78,7 +83,7 @@
 
       <section id="protection">
         <h2>Protection and external services</h2>
-        <p>Medication data is stored in Android’s app-private storage. The app does not currently add its own file encryption or a separate app lock. Google states that data collected by Mobile Ads SDK is encrypted in transit using TLS. Also manage your device lock and notification visibility.</p>
+        <p>Reminder data is stored in Android’s app-private storage. The app does not currently add its own file encryption or a separate app lock. Google states that data collected by Mobile Ads SDK is encrypted in transit using TLS. Also manage your device lock and notification visibility.</p>
         <p>The app uses Google Mobile Ads 25.5.0, Google UMP 4.0.0, and Google Play Billing 9.1.0. Google’s policies and settings govern its data processing, sharing, and international processing.</p>
         <p>This page uses no custom ads, visitor analytics, input forms, or external web fonts. When hosted on GitHub Pages, page requests are processed by GitHub. External links are subject to the destination’s privacy policy.</p>
         <ul>
@@ -90,12 +95,13 @@
 
       <section id="contact" class="contact">
         <h2>Contact and policy updates</h2>
-        <p>Contact <strong>JTJ</strong> at <a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a> with privacy questions or questions about deletion. “Contact us” opens an email draft with the recipient and subject; it does not automatically attach medication data or receipts. Email is sent only when you choose to send it.</p>
-        <p>JTJ cannot remotely access or delete medication information stored on your device. Include only what is needed for your inquiry, and avoid sending medication names, health details, or purchase tokens.</p>
+        <p>Contact <strong>JTJ</strong> at <a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a> with privacy questions or questions about deletion. “Contact us” opens an email draft with the recipient and subject; it does not automatically attach reminder data or receipts. Email is sent only when you choose to send it.</p>
+        <p>If you send a support email, your sender email address, message, and any attachments you choose to include are delivered through the email service and used to respond to your inquiry. The app does not send these automatically.</p>
+        <p>JTJ cannot remotely access or delete reminder information stored on your device. Include only what is needed for your inquiry, and do not send unnecessary personal information, reminder titles, or purchase tokens.</p>
         <p>We update this policy and its date when our data handling changes. Additional notice or consent will be provided where required.</p>
       </section>
     </main>
   </div>
-  <footer class="footer">Yakmukja · 약먹자 · JTJ <span aria-hidden="true">/</span> <a href="index.html" lang="ko">한국어 개인정보처리방침</a></footer>
+  <footer class="footer">Chaenggija · 챙기자 · JTJ <span aria-hidden="true">/</span> <a href="index.html" lang="ko">한국어 개인정보처리방침</a></footer>
 </body>
 </html>
