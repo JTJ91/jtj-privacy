@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer">
+  <meta name="description" content="Muljuja privacy policy: on-device plant and watering records, reminders, ads, purchases, backup and deletion.">
+  <title>Muljuja Privacy Policy | JTJ</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="topbar"><a class="brand" href="en.html">Muljuja</a><nav class="languages" aria-label="Language"><a href="index.html" lang="ko">한국어</a><a href="en.html" lang="en" aria-current="page">English</a><a href="ja.html" lang="ja">日本語</a></nav></header>
+  <div class="layout">
+    <aside class="toc"><h2>Contents</h2><nav aria-label="Contents"><a href="#local-data">Data on your device</a><a href="#notifications">Reminders &amp; device features</a><a href="#ads">Ads &amp; privacy choices</a><a href="#purchases">Ad removal purchases</a><a href="#deletion">Retention, backup &amp; deletion</a><a href="#protection">Protection &amp; external services</a><a href="#contact">Contact &amp; updates</a></nav></aside>
+    <main id="content">
+      <h1>Muljuja Privacy Policy</h1>
+      <p class="intro">This policy applies to Muljuja (물주자), provided by JTJ. The Android package is <span>com.muljueosseoyo.app</span>.</p>
+      <div class="meta"><span>Developer: JTJ</span><span>Effective and last updated: <time datetime="2026-11-26">November 26, 2026</time></span><a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a></div>
+      <p class="overview">Muljuja helps you manage houseplants and watering dates. Plant and watering records stay on your device. There is no account, login or developer-server synchronization. Google services process information for advertising and ad removal purchases. Android system backup and device transfer are described below.</p>
+      <section id="local-data"><h2>Data stored on your device and its purposes</h2>
+        <ul><li><strong>Plants:</strong> nicknames, species, growing start date, last watering date, interval, amount and next due date are stored in local SQLite to manage plants and calculate schedules.</li><li><strong>Watering and reminder records:</strong> dates, amounts, previous schedules for undo, cancellation state, snoozes and notification state support history, schedule restoration and duplicate prevention.</li><li><strong>Appearance and settings:</strong> plant positions, pot shapes and colors, garden motion, reminder time, reminder enablement and permission-request state. Device language and local time determine language, dates and day/night appearance.</li><li><strong>Purchase confirmation:</strong> Google Play purchase details and signed receipts verify ad removal. A verified receipt copy is stored in a location excluded from Android backup.</li></ul>
+        <p>Plant names, species, dates and watering records are not sent to a developer server or added to ad requests. Illustrations are bundled with the app; there is no photo upload or AI diagnosis.</p>
+      </section>
+      <section id="notifications"><h2>Reminders and device features</h2>
+        <p>Android schedules reminders locally, including rescheduling after reboot, time changes or app updates. No developer push-notification server is used. Notification permission can be changed in Android settings. Plant nicknames may appear in notifications, including the lock screen; manage notification visibility in Android.</p>
+        <p>Vibration provides touch feedback in plant details. The app does not request camera, microphone, contacts or GPS location access. Ads and Google Play purchases/restoration use the internet. Plant management works offline.</p>
+      </section>
+      <section id="ads"><h2>Advertising and privacy choices</h2>
+        <p>The free version may show a Google AdMob banner in a separate area at the bottom of the home screen. Ads are hidden during menus, editing, details, purchases and plant placement. Development builds use Google's official test ad IDs.</p>
+        <p>Google Mobile Ads SDK collects and shares information for advertising, measurement, analytics, fraud prevention and security, including:</p>
+        <ul><li>IP address and the approximate location it can indicate.</li><li>App launches, ad taps and other app/ad interactions.</li><li>Performance and diagnostics, such as startup time, hangs and energy use.</li><li>Device or other identifiers, such as Android advertising ID and app set ID, and account-related identifiers where applicable.</li></ul>
+        <p>See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's SDK data disclosure</a>. These processes can occur without GPS permission.</p>
+        <p>Google User Messaging Platform (UMP) checks consent status and presents required forms according to region and service configuration. Ads are requested when permitted. “Ad privacy settings” appears in the menu when required by the SDK. Manage choices through that form and Android advertising settings. Some processing for advertising, measurement or security may continue after choices change.</p>
+        <p>Once ad removal ownership is verified, the app stops new banner requests and removes the ad area. Purchasing does not delete data Google already holds.</p>
+      </section>
+      <section id="purchases"><h2>Google Play ad removal purchases</h2>
+        <p>Ad removal is a one-time, non-consumable purchase. Google Play handles payment and payment methods. The app does not request or store card numbers or payment passwords.</p>
+        <p>The app processes product/package information, purchase state, purchase tokens, receipts and signatures to verify signatures and acknowledgement. A verified receipt and signature are stored in no-backup storage for offline ownership checks. They are not sent to a developer verification server.</p>
+        <p>On launch, return to the app and “Restore purchases,” current Play purchases are queried. Clearing app data does not cancel a Play purchase. Restore with the purchasing Google account after reinstalling or changing devices. Refunds or revocations take effect after a successful current purchase query. Google Play procedures govern purchase management.</p>
+      </section>
+      <section id="deletion"><h2>Retention, backup and deletion</h2>
+        <p>Plant data, watering records and settings remain on the device until deleted. Undoing the latest watering restores the previous schedule and records its cancelled state; it does not immediately erase that database row.</p>
+        <ol><li><strong>Delete a plant:</strong> select and confirm Delete in plant details to remove that plant and its associated watering records and cancel scheduled reminders.</li><li><strong>Clear all local data:</strong> use Android settings → Muljuja → Storage → Clear data, or uninstall the app. This removes local app data and receipt copies. Menu names vary by device.</li><li><strong>Google-held data:</strong> uninstalling does not erase all Play purchases, advertising data or system backups. Manage these using the respective account, privacy and backup settings.</li></ol>
+        <p>Android backup and device transfer are allowed, so plant data and settings may be included depending on the device, OS and user settings. Receipt copies are excluded from backup. JTJ provides no separate cloud synchronization and cannot remotely delete system backups. Backup creation, restoration, retention and deletion follow the backup provider's settings and policies.</p>
+        <p>Receipt copies are removed when app data is cleared or a successful purchase query shows no ownership. Google's retention and deletion follow <a href="https://policies.google.com/privacy?hl=en">Google's Privacy Policy</a>. JTJ cannot remotely erase your device data or all data held by Google.</p>
+      </section>
+      <section id="protection"><h2>Protection and external services</h2>
+        <p>Plant data is stored in Android's app-private storage. There is no additional app-level file encryption or app lock. Google states that information collected by Mobile Ads SDK is encrypted in transit using TLS.</p>
+        <p>The app uses Google Mobile Ads 25.5.0, UMP 4.0.0 and Play Billing 9.1.0. Google's retention, sharing and international processing follow its policies and settings. See <a href="https://policies.google.com/technologies/ads?hl=en">Google advertising privacy information</a>.</p>
+        <p>This page has no login, custom ads, visitor analytics, input forms or external web fonts. GitHub Pages processes public page requests under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. The same documents are bundled for offline reading in the app. External links follow the destination's policy.</p>
+      </section>
+      <section id="contact" class="contact"><h2>Contact and policy updates</h2>
+        <p>Contact <strong>JTJ</strong> at <a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a> about privacy and deletion. “Contact us” opens an email draft with a recipient and subject. It sends only when you choose to send, and never automatically attaches plant data, receipts or logs.</p>
+        <p>Your sender address, message and voluntary attachments are handled through the email service for support. They are retained while needed to respond and deleted when no longer needed, except for legally required retention. Include only necessary information.</p>
+        <p>Changes are reflected in this policy and its update date, with separate notice or consent where required. The <a href="https://jtj91.github.io/jtj-privacy/muljuja/en.html">public web policy</a> is also available. Bundled documents are refreshed through app updates.</p>
+      </section>
+    </main>
+  </div><footer class="footer">Muljuja · 물주자 · JTJ</footer>
+</body>
+</html>

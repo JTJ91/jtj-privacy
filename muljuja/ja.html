@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer">
+  <meta name="description" content="Muljujaのプライバシーポリシー。植物・水やり記録の端末内保存、通知、広告、購入、バックアップと削除について。">
+  <title>Muljuja プライバシーポリシー | JTJ</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">本文へ移動</a>
+  <header class="topbar"><a class="brand" href="ja.html">Muljuja</a><nav class="languages" aria-label="言語"><a href="index.html" lang="ko">한국어</a><a href="en.html" lang="en">English</a><a href="ja.html" lang="ja" aria-current="page">日本語</a></nav></header>
+  <div class="layout">
+    <aside class="toc"><h2>目次</h2><nav aria-label="目次"><a href="#local-data">端末に保存する情報</a><a href="#notifications">通知と端末機能</a><a href="#ads">広告とプライバシー設定</a><a href="#purchases">広告削除の購入</a><a href="#deletion">保存・バックアップ・削除</a><a href="#protection">保護と外部サービス</a><a href="#contact">お問い合わせと変更</a></nav></aside>
+    <main id="content">
+      <h1>Muljuja プライバシーポリシー</h1>
+      <p class="intro">本ポリシーは、JTJが提供するMuljuja（물주자）に適用されます。Androidパッケージ名は <span>com.muljueosseoyo.app</span> です。</p>
+      <div class="meta"><span>開発者：JTJ</span><span>施行日・最終更新日：<time datetime="2026-11-26">2026年11月26日</time></span><a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a></div>
+      <p class="overview">Muljujaは観葉植物と水やり予定を管理するアプリです。植物と水やりの記録は端末に保存され、会員登録・ログイン・開発者サーバーによる同期はありません。広告と広告削除の購入にはGoogleサービスによる情報処理が伴います。Androidのバックアップと端末移行は以下で説明します。</p>
+      <section id="local-data"><h2>端末に保存する情報と目的</h2>
+        <ul><li><strong>植物情報：</strong>ニックネーム、種類、栽培開始日、最終水やり日、間隔、量、次回予定日を端末内のSQLiteに保存し、植物管理と予定の計算に使います。</li><li><strong>水やり・通知の記録：</strong>日付・量、取り消し用の以前の予定と取り消し状態、翌日の再通知、通知処理の状態を保存し、履歴・予定の復元・重複防止に使います。</li><li><strong>表示・設定：</strong>植物の位置、鉢の形と色、庭の動き、通知時刻・有効状態・権限確認の状態を保存します。端末の言語と現地時刻を参照し、言語・日付・昼夜を表示します。</li><li><strong>購入確認：</strong>Google Playの購入情報と署名付きレシートで広告削除の権利を確認します。検証済みレシートのコピーはバックアップ対象外の領域に保存します。</li></ul>
+        <p>植物の名前・種類・日付・水やり記録を開発者サーバーに送信したり広告リクエストに含めたりしません。植物の絵は同梱のイラストで、写真アップロードやAI診断はありません。</p>
+      </section>
+      <section id="notifications"><h2>通知と端末機能</h2>
+        <p>Androidのアラーム・通知機能で端末内に予定を設定し、再起動・時刻変更・アプリ更新後に再設定することがあります。開発者のプッシュ通知サーバーは使いません。通知権限はAndroid設定で変更できます。植物のニックネームがロック画面を含む通知に表示される場合があるため、公開範囲もご確認ください。</p>
+        <p>振動は植物詳細のタッチ反応に使います。カメラ・マイク・連絡先・GPS位置情報の権限は要求しません。広告とGoogle Playの購入・復元にはインターネットを使い、植物管理はオフラインでも利用できます。</p>
+      </section>
+      <section id="ads"><h2>広告とプライバシー設定</h2>
+        <p>無料版ではホーム下部の専用領域にGoogle AdMobバナーが表示されることがあります。メニュー・編集・詳細・購入画面や植物配置中は非表示にします。開発ビルドはGoogle公式テスト広告IDを使います。</p>
+        <p>Google Mobile Ads SDKは広告配信・測定、分析、不正防止・セキュリティのため、次の情報を収集・共有します。</p>
+        <ul><li>IPアドレスと、それから推定できるおおよその位置。</li><li>アプリ起動、広告タップなどのアプリ・広告の操作情報。</li><li>起動時間、フリーズ頻度、消費電力などの性能・診断情報。</li><li>Android広告ID、アプリセットIDなどの識別子、および該当する場合はアカウント関連の識別子。</li></ul>
+        <p>詳しくは<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ja">GoogleのSDKデータ開示</a>をご覧ください。GPS権限がなくてもこれらの処理が生じることがあります。</p>
+        <p>Google User Messaging Platform（UMP）で同意状態を確認し、地域やサービス設定に応じたフォームを表示します。許可された場合に広告をリクエストし、SDKが要求する場合はメニューに「広告のプライバシー設定」を表示します。フォームとAndroidの広告設定で選択を管理できます。選択を変更した後も、広告・測定・セキュリティに必要な一部処理が続く場合があります。</p>
+        <p>広告削除の権利を確認すると、新しいバナーリクエストを停止し、広告領域を取り除きます。購入してもGoogleが既に保管する情報は削除されません。</p>
+      </section>
+      <section id="purchases"><h2>Google Playでの広告削除購入</h2>
+        <p>広告削除は一回限りの非消費型購入です。決済と支払方法はGoogle Playが処理し、アプリはカード番号や決済パスワードを入力・保存しません。</p>
+        <p>商品・パッケージ、購入状態、購入トークン、レシートと署名を処理して署名と承認を確認します。検証済みレシートと署名はバックアップ対象外の領域に保存し、オフラインの権利確認に使います。開発者の検証サーバーには送信しません。</p>
+        <p>起動・アプリへの復帰・「購入を復元」で現在の購入を照会します。アプリデータを削除しても購入は取り消されません。再インストール・機種変更後は同じ購入アカウントで復元できます。返金・権利取り消しは次の正常な照会で反映され、購入管理にはGoogle Playの手続きが適用されます。</p>
+      </section>
+      <section id="deletion"><h2>保存期間、バックアップと削除</h2>
+        <p>植物・水やり記録・設定は削除するまで端末に保存します。直近の水やりの取り消しでは予定を戻し、取り消し状態を記録します。データベースの行を直ちに完全消去する処理ではありません。</p>
+        <ol><li><strong>植物の削除：</strong>植物詳細で「削除」を選び確認すると、植物と関連する水やり記録を削除し、通知予定を取り消します。</li><li><strong>端末内の全データ：</strong>Android設定 → Muljuja → ストレージ → データを削除、またはアンインストールでアプリデータとレシートのコピーを削除できます。項目名は端末により異なります。</li><li><strong>Googleの情報：</strong>アンインストールだけでは購入履歴・広告情報・システムバックアップの全ては削除されません。各サービスのアカウント・プライバシー・バックアップ設定で管理してください。</li></ol>
+        <p>Androidバックアップと端末移行を許可しているため、端末・OS・ユーザー設定によって植物データと設定が含まれる場合があります。レシートはバックアップ対象外です。JTJ独自のクラウド同期はなく、システムバックアップを遠隔削除できません。作成・復元・保存・削除はバックアップ提供者の設定と方針に従います。</p>
+        <p>レシートのコピーはアプリデータ削除時、または正常な購入照会で権利がないと確認された場合に削除します。Googleの保管・削除には<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>が適用されます。JTJは端末やGoogleの全情報を遠隔削除できません。</p>
+      </section>
+      <section id="protection"><h2>情報保護と外部サービス</h2>
+        <p>植物情報はAndroidのアプリ専用領域に保存します。アプリ独自の追加ファイル暗号化やアプリロックはありません。GoogleはMobile Ads SDKが収集する情報をTLSで暗号化して送信すると説明しています。</p>
+        <p>Google Mobile Ads 25.5.0、UMP 4.0.0、Play Billing 9.1.0を使用します。Googleの保管・共有・国をまたぐ処理には各サービスの方針と設定が適用されます。<a href="https://policies.google.com/technologies/ads?hl=ja">Googleの広告プライバシー情報</a>もご確認ください。</p>
+        <p>本ページはログイン、独自広告、訪問者分析、入力フォーム、外部Webフォントを使いません。公開ページへのアクセスはGitHub Pagesが処理し、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシー声明</a>が適用されます。同じ文書をアプリに同梱してオフライン表示します。外部リンクにはリンク先の方針が適用されます。</p>
+      </section>
+      <section id="contact" class="contact"><h2>お問い合わせと変更</h2>
+        <p>個人情報・削除方法については<strong>JTJ</strong>の<a href="mailto:jtaejuwork@gmail.com">jtaejuwork@gmail.com</a>へお問い合わせください。「お問い合わせ」は宛先と件名を設定したメール作成画面を開き、ユーザーが送信を選んだ場合にのみ送信します。植物情報・レシート・ログを自動添付しません。</p>
+        <p>送信したメールの送信元アドレス・内容・添付資料はメールサービスを通じて届き、サポート対応に使用します。対応に必要な期間保管し、不要になった後に削除します。ただし法令による保管が必要な場合はその期間に従います。必要な情報のみお送りください。</p>
+        <p>情報処理が変わる場合は本方針と更新日を変更し、必要に応じて別途通知・同意手続きを行います。<a href="https://jtj91.github.io/jtj-privacy/muljuja/ja.html">公開Webページ</a>でも確認できます。同梱文書はアプリ更新で更新されます。</p>
+      </section>
+    </main>
+  </div><footer class="footer">Muljuja · 물주자 · JTJ</footer>
+</body>
+</html>
